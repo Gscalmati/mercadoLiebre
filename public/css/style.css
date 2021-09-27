@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto';
+    background-color: lightgray;
+    margin: 0px;
+}
+
+/* Header*/ 
+
+header {
+    background-color: #EAC926;
+    padding: 0px 0px;
+    width: 100vw;
+    margin: 0px 0px;
+    position: fixed;
+    top:0px;
+
+    z-index: 100;
+}
+
+
+.main-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: 35%;
+    padding-top: 10px;
+}
+
+
+.upper-main-bar{
+    width: 90%;
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+}
+
+
+
+
+.search-form{
+    text-align: center;
+    width: 40vw;
+    font-size: 3vw;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+
+
+
+#boton-busqueda{
+    background-color: lightgray;
+    margin: auto 0px;
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+.search-bar input[type=text]{
+    border:none;
+    font-size: 14px;
+    width: 40vw;
+}
+
+.search-bar button{
+    border:none;
+    border-left: grey solid 1px;
+    background-color: lightgray;
+}
+
+#lupa {
+    font-size: 4vw;
+    padding: 8px 0px;
+    
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(10px)
+    }
+    50%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+#cuotas { 
+    font-size: 4vw;
+    animation: mover 1000ms linear infinite alternate;
+}
+
+
+
+
+nav ul{
+    display: none;
+    list-style-type: none;
+    padding: 0px 1px;
+}
+
+
+a { 
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+p{
+    margin: 0px;
+    padding: 1px;
+}
+
+.fa-bars{ 
+    max-width: 50px;
+    font-size: 30px;
+    color:white;
+    background-color:  blue;
+    border: solid  blue 8px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Articulos */
+main {
+    width: 100%;
+    margin-top: 170px;
+}
+.subtitulo {
+    font-size: 24px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+
+#banner{
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article {
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+    margin: 10px 10px;
+
+    position: relative;
+    z-index: 1;
+
+}
+
+section article img {
+    width: 100%;
+    border-bottom: solid 1px #ebebeb;
+}
+
+main .fa-shipping-fast{ /* Icono de envio*/
+    color: #39b54a;
+    border: 2px solid #39b54a;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 320px;
+    right: 20px;
+
+    z-index: 10;
+    
+}
+
+@keyframes acelerar{
+    0%{
+        transform: rotate(-45deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+main .fa-shipping-fast:hover{
+    animation: acelerar 2s linear infinite alternate;
+}
+
+
+.promocion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+}
+
+
+.precio {
+    font-size: 1.3rem;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 1.5rem;
+    color:#39b54a;
+    width: 70%;
+    text-align: right;
+}
+
+h4{ /* Descripción de articulos*/
+    font-size: 20px;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    margin: 0;
+    padding: 15px;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+
+    opacity: 0;
+    transition: opacity 450ms;
+    
+}
+
+h4:hover{
+    opacity: 1;
+}
+
+
+/* Datos del producto */
+section article div {
+    
+    margin: 0px 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    margin: 0px 10px;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+    padding: 10px 0px;
+}
+
+footer section {
+    text-align: center;
+    padding: 0% 20%;
+    margin-bottom: 2%;
+}
+
+
+footer section div i {
+    color:  #03264C;
+    font-size: 48px;
+}
+
+#copyright {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px){
+
+    #logo{
+        max-width: 20vw;
+    }
+
+    .search-bar input[type=text]{
+        font-size: 18px;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+    
+    /*Barra principal*/
+    .main-bar{ 
+        display: flex;
+    }
+
+    .search-bar{
+        display: flex;
+    }
+
+    .search-form{
+        width: auto;
+        font-size: 2vw;
+    }
+
+
+    #cuotas{
+        max-width: 300px;
+        font-size: 2vw;
+        text-align: right;
+    }
+
+    /* Nav Bar */  
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    nav ul{
+        display: block;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0px 5px;
+    }
+
+
+/* Articulos */
+
+    main section {
+        justify-content: space-evenly;
+    }
+
+    h4{
+        display: block;
+        position: static;
+
+        transition: none;
+        opacity: 0;
+
+        background-color: white;
+        color: black;
+
+        margin: 25px 0px 0px 0px;
+        padding: 0;
+        font-size: 1.3em;
+
+        transition: all 450ms;
+    }
+
+    main section article:hover h4{
+        opacity: 1;
+        margin-bottom: 25px;
+    }
+
+    
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    } 
+
+@media (min-width: 1200px){
+    /*Header*/
+
+
+    main{
+        margin-top: 170px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .main-bar, nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-bar{
+        flex-wrap: nowrap;
+    }
+
+
+    
+    .search-bar input[type=text]{
+        font-size: 24px;
+    }
+
+    #lupa{
+        font-size: 28px;
+    }
+
+    #cuotas{
+        max-width: none;
+        font-size: 20px;
+        text-align: right;
+        margin: 0;
+    }
+
+    nav ul li{
+        font-size: 20px;
+    }
+
+
+    /* Articulos */
+
+    main section article{
+        width: 22%;
+    }
+
+    main .fa-shipping-fast{
+        top: 240px;
+        right: 10px;
+    }
+
+    /*Footer*/
+
+    footer div{
+        display: flex;
+    }
+
+    footer section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 0px;
+        margin: 5px 30px;
+    } 
+
+    footer section i{
+        transition: color 450ms;
+    }
+
+    footer section i:hover{
+        color: #EAC926
+    }
+
+    
+
+
+
+}   
+
+}

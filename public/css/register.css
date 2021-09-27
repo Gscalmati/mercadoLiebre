@@ -1,0 +1,86 @@
+/* Header */
+
+/* Main */
+main{
+    font-family: "Roboto";
+}
+
+main form{
+    text-align: center;
+    
+
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+form div{
+    margin: 10px 0px;
+}
+
+form div input{
+    background-color: lightgray;
+    width: 60%;
+}
+
+form div label{
+    font-weight: 600;
+}
+
+form .tipo-usuario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+form .tipo-usuario .tipos {
+    display: flex;
+    margin:auto;
+    flex-direction: row;
+  
+}
+
+form .intereses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0px 0px;
+}   
+
+#categorias label{
+    font-weight: 400;
+}
+
+#categorias input{
+     width: auto;
+}
+
+form .foto{
+    margin: auto;
+
+}
+
+form input {
+    border-radius: 3px;
+    border-color: #03264C;
+    padding: 10px;
+}
+
+form .button {
+    margin-bottom: 15px;
+    width: 50%;
+    background-color:#095ab1;
+    color: white;
+    border-radius: 5px;
+
+}
+
+form .button:hover{
+    background-color:#0022AA;
+}
