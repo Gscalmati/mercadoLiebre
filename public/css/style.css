@@ -299,6 +299,10 @@ footer section div i {
 
 @media (min-width: 768px){
 
+    main {
+        margin-top: 200px;
+    }
+
     #logo {
         width: 90%;
     }
@@ -393,7 +397,7 @@ footer section div i {
 
 
     main{
-        margin-top: 170px;
+        margin-top: 180px;
         margin-bottom: 15px;
         width: 100%;
     }
