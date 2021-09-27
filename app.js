@@ -9,8 +9,8 @@ const app = express();
 
 app.use( express.static(path.resolve(__dirname, './public')))
 
-app.listen(3030, ()=> {
-    console.log ("Running server on 3030")
+app.listen(process.env.PORT || 3000, ()=> {
+    console.log ("Running server on 3000")
 })
 
 app.get("/", (req,res) => {
