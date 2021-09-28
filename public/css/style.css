@@ -253,7 +253,7 @@ h4{ /* Descripción de articulos*/
     
 }
 
-h4:hover{
+section article:hover h4{
     opacity: 1;
 }
 
@@ -407,25 +407,34 @@ footer section div i {
         margin: auto;
     }
 
-    .main-bar{
-        flex-wrap: nowrap;
+    .upper-main-bar{
+        display: flex;
+        justify-content: space-around;
     }
 
-
+    .main-bar{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
     
     .search-bar input[type=text]{
-        font-size: 24px;
+        font-size: 20px;
+        width: 30vw;
     }
 
     #lupa{
-        font-size: 28px;
+        font-size: 20px;
     }
 
     #cuotas{
         max-width: none;
         font-size: 20px;
         text-align: right;
-        margin: 0;
+        margin-right: 10px;
+    }
+
+    #cuotas { 
+        animation: none;
     }
 
     nav ul li{
